@@ -1,0 +1,21 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+
+$font-stack: "Poppins", sans-serif;
+$light-grey: #f9f9f9;
+$primary-color: #ceb8aa;
+$secondary-color: #935c87;
+$text-color: #323232;
+
+body {
+  background-color: $light-grey;
+  font-family: $font-stack;
+  color: $text-color;
+  line-height: 140%;
+}
