@@ -13,6 +13,7 @@
 $font-b612: "B612", sans-serif;
 $font-dosis: "Dosis", sans-serif;
 $light-grey: #f9f9f9;
+$darker-grey: #F5F5F5;
 $primary-color: #ceb8aa;
 $secondary-color: #935c87;
 $text-color: #323232;
@@ -26,4 +27,10 @@ body {
 button {
     outline: none !important;
     border: none !important;
+}
+
+.showcase {
+  background-color: $secondary-color;
+  color: $text-color;
+
 }
