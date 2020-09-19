@@ -7,7 +7,7 @@
     <link href="css/styles.css" type="text/css" rel="stylesheet" />
   </head>
   <body>
-    <header class="showcase">
+    <header>
       <nav>
         <div class="menu-toggler">
           <button id="menu-toggler" class="menu-toggler">
@@ -20,54 +20,55 @@
           </button>
         </div>
         <h4>Shorteny.</h4>
-        <div>
-          <div class="socials">
+        <div class="socials">
+    
             <span
-              class="iconify"
+              class="box iconify"
               data-inline="false"
               data-icon="teenyicons:github-solid"
               style="color: #ffffff; font-size: 12px"
             ></span>
-          </div>
-          <div class="socials">
+     
+  
             <span
-              class="iconify"
+              class="box iconify"
               data-inline="false"
               data-icon="bx:bxl-instagram"
               style="color: #ffffff; font-size: 16px"
             ></span>
-          </div>
-          <div class="socials">
+  
             <span
-              class="iconify"
+              class="box iconify"
               data-inline="false"
               data-icon="simple-icons:ko-fi"
               style="color: #ffffff; font-size: 16px"
             ></span>
-          </div>
+    
         </div>
       </nav>
     </header>
-    <main class="showcase">
-      <div>
-        <h2>More than just shorter links</h2>
-        <p>Create short and memorable links in few seconds.</p>
-      </div>
-      <div>
-        <form action="#" class="url-form">
-          <input
-            type="text"
-            id="url-form-input"
-            placeholder="add the link here..."
-          />
-          <button class="url-form-button" type="submit">Shorten it!</button>
-        </form>
-        <div class="validation-message">Please add a link</div>
-      </div>
-      <div class="results">
-          <p class="url-provided">www.linkedin.com/url/myname/profile</p>
-          <p class="url-shortened">https://rel.ink/24nfd</p>
-          <button class="copy" id="copy">Copy</button>
+    <main class="container">
+      <div class="content">
+          <div>
+            <h2>More than just shorter links</h2>
+            <p>Create short and memorable links in few seconds.</p>
+          </div>
+          <div class="form-border">
+            <form action="#" class="url-form">
+              <input
+                type="text"
+                id="url-form-input"
+                placeholder="add the link here..."
+              />
+              <button class="url-form-button" type="submit">Shorten it!</button>
+            </form>
+            <div class="validation-message">Please add a link</div>
+          </div>
+          <!-- <div class="results">
+              <p class="url-provided">www.linkedin.com/url/myname/profile</p>
+              <p class="url-shortened">https://rel.ink/24nfd</p>
+              <button class="copy" id="copy">Copy</button>
+          </div> -->
       </div>
     </main>
     <script src="https://code.iconify.design/1/1.0.6/iconify.min.js"></script>
