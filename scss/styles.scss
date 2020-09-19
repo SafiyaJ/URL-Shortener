@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=B612:ital,wght@0,400;0,700;1,700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@300;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;800&display=swap');
 
 *,
 *::before,
@@ -22,6 +22,40 @@ body {
   background-color: $light-grey;
   color: $text-color;
   line-height: 140%;
+
+  nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 30px;
+    
+    .menu-toggler{
+      background-color: $light-grey;
+      height: 40px;
+      width: 40px;
+      padding: 5px;
+    }
+
+    h4{
+      font-family: $font-dosis;
+      font-weight: 800;
+      font-size: 24px;
+    }
+
+    .socials{ 
+      display: flex;
+      padding: 15px;
+
+      .box{
+          background-color: $primary-color;
+          height: 30px;
+          width: 30px;
+          padding: 5px;
+          margin: 5px;
+          border-radius: 20%;
+        }
+    }
+  }
 }
 
 button {
@@ -29,8 +63,56 @@ button {
     border: none !important;
 }
 
-.showcase {
-  background-color: $secondary-color;
-  color: $text-color;
+.container {
+  // max-width: 1100px;
+  // padding: 0 30px;
+  // margin: 0 auto;
+  // overflow: auto;
+  position: absolute;
+  background-color: $darker-grey;
+  height: 40vh;
+  width: 100%;
+  bottom: 0;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  
 
+  .content{
+    position: relative;
+    margin-top: -15%;
+    // width: 100%;
+
+    h2{
+      font-family: $font-b612;
+      font-weight: 700;
+      font-size: 48px;
+      padding: 0 20%;
+      text-align: center;
+      line-height: 1.3;
+      margin-bottom: 10px;
+    }
+
+    p{
+      font-family: $font-dosis;
+      font-weight: 400;
+      font-size: 24px;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .form-border{
+      background-color: $secondary-color;
+      // border-radius: 10%;
+      padding: 10px;
+      display: grid;
+      align-content: center;
+      justify-content: center;
+
+      .url-form{
+        
+      }
+
+    }
+  }
 }
