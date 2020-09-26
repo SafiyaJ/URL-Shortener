@@ -51,25 +51,40 @@
       <div class="content">
           <div>
             <h2>More than just shorter links</h2>
-            <p>Create short and memorable links in few seconds.</p>
+            <p class="subheading">Create short and memorable links in few seconds.</p>
           </div>
           <div class="form-border">
             <form action="#" class="url-form">
               <input
+                required
                 type="text"
                 id="url-form-input"
                 placeholder="add the link here..."
               />
               <button class="url-form-button" type="submit">Shorten it!</button>
             </form>
-            <div class="validation-message">Please add a link</div>
+            <!-- <div class="validation-message">Please add a link</div> -->
           </div>
-          <!-- <div class="results">
+          <div class="results">
               <p class="url-provided">www.linkedin.com/url/myname/profile</p>
               <p class="url-shortened">https://rel.ink/24nfd</p>
               <button class="copy" id="copy">Copy</button>
-          </div> -->
+                <!-- <script>document.querySelector('button').addEventListener('click', async event => {
+                  if (!navigator.clipboard) {
+                    // Clipboard API not available
+                    return
+                  }
+                  const text = event.target.innerText
+                  try {
+                    await navigator.clipboard.writeText(text)
+                    event.target.textContent = 'Copied to clipboard'
+                  } catch (err) {
+                    console.error('Failed to copy!', err)
+                  }
+                })</script> -->
+          </div>
       </div>
+
     </main>
     <script src="https://code.iconify.design/1/1.0.6/iconify.min.js"></script>
   </body>

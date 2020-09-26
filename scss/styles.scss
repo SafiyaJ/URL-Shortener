@@ -80,7 +80,7 @@ button {
 
   .content{
     position: relative;
-    margin-top: -15%;
+    margin-top: -17%;
     // width: 100%;
 
     h2{
@@ -93,7 +93,7 @@ button {
       margin-bottom: 10px;
     }
 
-    p{
+    .subheading{
       font-family: $font-dosis;
       font-weight: 400;
       font-size: 24px;
@@ -102,17 +102,102 @@ button {
     }
 
     .form-border{
+      // background-color: $secondary-color;
+      // // border-radius: 10%;
+      // padding: 10px;
+      // display: grid;
+      // align-content: center;
+      // justify-content: center;
+      width: 100%; /* Full width */
+      padding: 8px; /* Some padding */
+      border: 1px solid #f0f0f0; /* Gray border */
+      border-radius: 5px; /* Rounded borders */
+      box-sizing: border-box; /* Make sure that padding and width stays in place */
+      margin-top: 6px; /* Add a top margin */
+      margin-bottom: 16px; /* Bottom margin */
+      resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
       background-color: $secondary-color;
-      // border-radius: 10%;
-      padding: 10px;
-      display: grid;
-      align-content: center;
-      justify-content: center;
+      outline: none!important;
 
-      .url-form{
+      input{
+        width: 82%; /* Full width */
+        padding: 12px; /* Some padding */
+        border: 1px solid $light-grey; /* Gray border */
+        border-radius: 5px; /* Rounded borders */
+        // box-sizing: border-box; /* Make sure that padding and width stays in place */
+        margin-top: 10px; /* Add a top margin */
+        margin-bottom: 10px; /* Bottom margin */
+        margin-left: 4px;
+        resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
+        background-color: $light-grey;
+        outline: none!important;
+        font-family: $font-b612;
+        color: $text-color;
         
       }
 
+      .url-form-button{
+        background-color: $primary-color;
+        color:$light-grey;
+        padding: 12px;
+        border: 2px solid;
+        border-radius: 5px;
+        cursor: pointer;
+        font-family: $font-b612;
+        font-weight: 700;
+        font-size: 14px;
+        margin-left: 5px;
+      }
+
+    }
+    
+    .results{
+      width: 100%; /* Full width */
+      padding: 10px; /* Some padding */
+      border: 1px solid whitesmoke; /* Gray border */
+      border-radius: 5px; /* Rounded borders */
+      box-sizing: border-box; /* Make sure that padding and width stays in place */
+      margin-top: 6px; /* Add a top margin */
+      margin-bottom: 16px; /* Bottom margin */
+      resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
+      background-color: whitesmoke;
+      outline: none!important;
+      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.05);
+      display: flex;
+      align-items: center;
+      align-content: center;
+      justify-content: space-between;
+
+      .url-provided{
+        font-family: $font-dosis;
+        font-weight: 500;
+        font-size: 13px;
+        text-align: center;
+        letter-spacing: 0.06em;
+        padding-left: 20px;
+      }
+
+      .url-shortened{
+        font-family: $font-dosis;
+        font-weight: 700;
+        font-size: 13px;
+        text-align: center;
+        letter-spacing: 0.06em;
+        color: $secondary-color;
+      }
+
+      .copy{
+        background-color: $primary-color;
+        color:$light-grey;
+        padding: 8px 18px;
+        border: 2px solid;
+        border-radius: 5px;
+        cursor: pointer;
+        font-family: $font-b612;
+        font-weight: 700;
+        font-size: 12px;
+        margin-right: 20px;
+      }
     }
   }
 }

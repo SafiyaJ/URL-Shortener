@@ -81,7 +81,7 @@ button {
 
 .container .content {
   position: relative;
-  margin-top: -15%;
+  margin-top: -17%;
 }
 
 .container .content h2 {
@@ -94,7 +94,7 @@ button {
   margin-bottom: 10px;
 }
 
-.container .content p {
+.container .content .subheading {
   font-family: "Dosis", sans-serif;
   font-weight: 400;
   font-size: 24px;
@@ -103,14 +103,125 @@ button {
 }
 
 .container .content .form-border {
+  width: 100%;
+  /* Full width */
+  padding: 8px;
+  /* Some padding */
+  border: 1px solid #f0f0f0;
+  /* Gray border */
+  border-radius: 5px;
+  /* Rounded borders */
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  /* Make sure that padding and width stays in place */
+  margin-top: 6px;
+  /* Add a top margin */
+  margin-bottom: 16px;
+  /* Bottom margin */
+  resize: vertical;
+  /* Allow the user to vertically resize the textarea (not horizontally) */
   background-color: #935c87;
+  outline: none !important;
+}
+
+.container .content .form-border input {
+  width: 82%;
+  /* Full width */
+  padding: 12px;
+  /* Some padding */
+  border: 1px solid #f9f9f9;
+  /* Gray border */
+  border-radius: 5px;
+  /* Rounded borders */
+  margin-top: 10px;
+  /* Add a top margin */
+  margin-bottom: 10px;
+  /* Bottom margin */
+  margin-left: 4px;
+  resize: vertical;
+  /* Allow the user to vertically resize the textarea (not horizontally) */
+  background-color: #f9f9f9;
+  outline: none !important;
+  font-family: "B612", sans-serif;
+  color: #323232;
+}
+
+.container .content .form-border .url-form-button {
+  background-color: #ceb8aa;
+  color: #f9f9f9;
+  padding: 12px;
+  border: 2px solid;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: "B612", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  margin-left: 5px;
+}
+
+.container .content .results {
+  width: 100%;
+  /* Full width */
   padding: 10px;
-  display: -ms-grid;
-  display: grid;
+  /* Some padding */
+  border: 1px solid whitesmoke;
+  /* Gray border */
+  border-radius: 5px;
+  /* Rounded borders */
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  /* Make sure that padding and width stays in place */
+  margin-top: 6px;
+  /* Add a top margin */
+  margin-bottom: 16px;
+  /* Bottom margin */
+  resize: vertical;
+  /* Allow the user to vertically resize the textarea (not horizontally) */
+  background-color: whitesmoke;
+  outline: none !important;
+  -webkit-box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.05);
+          box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.05);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -ms-flex-line-pack: center;
       align-content: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.container .content .results .url-provided {
+  font-family: "Dosis", sans-serif;
+  font-weight: 500;
+  font-size: 13px;
+  text-align: center;
+  letter-spacing: 0.06em;
+  padding-left: 20px;
+}
+
+.container .content .results .url-shortened {
+  font-family: "Dosis", sans-serif;
+  font-weight: 700;
+  font-size: 13px;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: #935c87;
+}
+
+.container .content .results .copy {
+  background-color: #ceb8aa;
+  color: #f9f9f9;
+  padding: 8px 18px;
+  border: 2px solid;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: "B612", sans-serif;
+  font-weight: 700;
+  font-size: 12px;
+  margin-right: 20px;
 }
 /*# sourceMappingURL=styles.css.map */
