@@ -62,6 +62,7 @@ button {
 .container .content {
   position: relative;
   margin-top: -17%;
+  width: 65%;
 }
 .container .content h2 {
   font-family: "B612", sans-serif;
@@ -130,9 +131,9 @@ button {
   font-family: "B612", sans-serif;
   font-weight: 700;
   font-size: 14px;
-  margin-left: 5px;
+  margin-left: 10px;
 }
-.container .content .results {
+.container .content .shortUrl-container .shortUrl-box {
   width: 100%;
   /* Full width */
   padding: 10px;
@@ -157,7 +158,10 @@ button {
   align-content: center;
   justify-content: space-between;
 }
-.container .content .results .url-provided {
+.container .content .shortUrl-container .shortUrl-box .shortUrl-box:not(:last-child) {
+  margin-bottom: 20px;
+}
+.container .content .shortUrl-container .shortUrl-box .shortUrl--link {
   font-family: "Dosis", sans-serif;
   font-weight: 500;
   font-size: 13px;
@@ -165,7 +169,7 @@ button {
   letter-spacing: 0.06em;
   padding-left: 20px;
 }
-.container .content .results .url-shortened {
+.container .content .shortUrl-container .shortUrl-box .shortUrl--refLink {
   font-family: "Dosis", sans-serif;
   font-weight: 700;
   font-size: 13px;
@@ -173,7 +177,7 @@ button {
   letter-spacing: 0.06em;
   color: #935c87;
 }
-.container .content .results .copy {
+.container .content .shortUrl-container .shortUrl-box .button {
   background-color: #ceb8aa;
   color: #f9f9f9;
   padding: 8px 18px;

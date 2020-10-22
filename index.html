@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Shorteny | URL shortening API Challenge</title>
     <link href="css/styles.css" type="text/css" rel="stylesheet" />
+    <script src="main.js" defer></script>
   </head>
   <body>
     <header>
@@ -54,36 +55,33 @@
             <p class="subheading">Create short and memorable links in few seconds.</p>
           </div>
           <div class="form-border">
-            <form action="#" class="url-form">
-              <input
-                required
-                type="url"
-                id="url-form-input"
-                placeholder="add the link here..."
-              />
-              <button class="url-form-button" type="submit" onclick=”shorturl()”>Shorten it!</button>
-              <script src=”main.js”></script>
+            <form id="shortURLForm"  class="url-form">
+              <div class="links__form__container">
+                <div class="links__form">
+                  <input
+                    required
+                    type="text"
+                    id="url-form-input"
+                    type="text"
+                    name="urlToShort"
+                    aria-label="Enter URL to Shorten"
+                    placeholder="add the link here..."
+                  />
+                  <button class="url-form-button" type="submit">Shorten it!</button>
+                  <div id="responseError" class="error">Please Add Valid URL</div>
+                </div>
+              </div>
             </form>
+          </div> 
+          <div class="shortUrl-container"></div>
             <!-- <div class="validation-message">Please add a link</div> -->
-          </div>
-          <div class="results">
-              <p class="url-provided">www.linkedin.com/url/myname/profile</p>
-              <p class="url-shortened">https://rel.ink/24nfd</p>
-              <button class="copy" id="copy">Copy</button>
-                <!-- <script>document.querySelector('button').addEventListener('click', async event => {
-                  if (!navigator.clipboard) {
-                    // Clipboard API not available
-                    return
-                  }
-                  const text = event.target.innerText
-                  try {
-                    await navigator.clipboard.writeText(text)
-                    event.target.textContent = 'Copied to clipboard'
-                  } catch (err) {
-                    console.error('Failed to copy!', err)
-                  }
-                })</script> -->
-          </div>
+          
+          
+          <!-- <div class="results"> -->
+              <!-- <p class="url-provided">www.linkedin.com/url/myname/profile</p>
+              <p class="url-shortened">https://rel.ink/24nfd</p> -->
+              <!-- <button class="copy" id="copy">Copy</button> -->
+          <!-- </div> -->
       </div>
 
     </main>
